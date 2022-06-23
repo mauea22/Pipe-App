@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRouterModule } from './app-router.module';
 
 import { AppComponent } from './app.component';
 
 //PrimeNG
-
 import { SharedModule } from './shared/shared.module';
+
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
+    AppRouterModule,
     SharedModule
   ],
   providers: [],
