@@ -12,5 +12,6 @@ nombreLower: string = 'mauro';
 nombreUpper: string = 'MAURO';
 nombreTitle: string = 'MaUrO';
 
+fecha: Date = new Date(); //el dia de hoy
 
 }
