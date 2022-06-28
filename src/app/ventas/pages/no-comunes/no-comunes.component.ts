@@ -17,7 +17,7 @@ export class NoComunesComponent implements OnInit {
   }
 
   //i18nplural
-  clientes: string[] = ['Maria', 'Juan', 'Ana'];
+  clientes: string[] = ['Maria', 'Juan', 'Ana', 'Pedro', 'Fernando'];
   clientesMapa = {
     '=0': 'no tenemos clientes esperando',
     '=1': 'tenemos 1 cliente esperando',
@@ -25,6 +25,15 @@ export class NoComunesComponent implements OnInit {
     'other': 'tenemos # clientes esperando'
   }
 
+  cambiarCliente(){
+    this.nombre = 'Mauro';
+    this.genero = 'masculino'
+  }
+
+
+  borrarCliente(){
+    this.clientes.pop()
+  }
 
   constructor() { }
 

@@ -7,13 +7,39 @@
 
   <div class=" sm:col md:col-9 lg:col">
     <p-fieldset legend="i18nSelect Pipe"  [toggleable]="true">
-      Saludos {{nombre}}, es un placer {{genero | i18nSelect: invitacionMapa}} al evento!!
-  </p-fieldset>
+      <p>
+        Saludos {{nombre}}, es un placer {{genero | i18nSelect: invitacionMapa}} al evento!!
+      </p>
+      <button (click)="cambiarCliente()" pButton type="button" class="p-button-raised p-button-secondary">Cambiar Persona</button>
+    </p-fieldset>
   </div>
 
   <div class=" sm:col md:col-9 lg:col">
     <p-fieldset legend="i18nplural Pipe"  [toggleable]="true">
-      Actualmente {{clientes.length| i18nPlural: clientesMapa}}
+      <p>
+        Actualmente {{clientes.length| i18nPlural: clientesMapa}}
+      </p>
+      <button (click)="borrarCliente()" pButton type="button" class="p-button-raised p-button-secondary">Borrar Persona</button>
+  </p-fieldset>
+  </div>
+
+  <div class=" sm:col md:col-9 lg:col">
+    <p-fieldset legend="slice Pipe"  [toggleable]="true">
+      <strong>Original</strong>
+      <pre>{{clientes}}</pre>
+
+      <strong>slice:0:2</strong>
+      <pre>{{clientes | slice:0:2}}</pre>
+
+      <strong>slice:1:2</strong>
+      <pre>{{clientes | slice:1:2}}</pre>
+
+      <strong>slice:2:4</strong>
+      <pre>{{clientes | slice:2:4}}</pre>
+
+      <strong>slice:0:3 de nombre(Clara)</strong>
+      <pre>{{nombre | slice:0:3}}</pre>
+
   </p-fieldset>
   </div>
 
