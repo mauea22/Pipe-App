@@ -42,5 +42,21 @@
 
   </p-fieldset>
   </div>
+  <div class=" sm:col md:col-9 lg:col">
+    <p-fieldset legend="keyvalue Pipe"  [toggleable]="true">
+      <ul>
+        <li *ngFor="let item of persona | keyvalue">
+            <strong>{{item.key | titlecase}}</strong> : {{item.value}}
+        </li>
+      </ul>
+    </p-fieldset>
+  </div>
+
+  <div class=" sm:col md:col-9 lg:col">
+    <p-fieldset legend="JsonPipe"  [toggleable]="true">
+      <pre>{{persona | json}}</pre>
+      <pre>{{heroes | json}}</pre>
+    </p-fieldset>
+  </div>
 
 </div>

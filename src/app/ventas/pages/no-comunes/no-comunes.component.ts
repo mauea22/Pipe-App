@@ -35,6 +35,29 @@ export class NoComunesComponent implements OnInit {
     this.clientes.pop()
   }
 
+
+  //KeyValue Pipe y JsonPipe
+  persona = {
+    nombre: 'Mauro',
+    edad: 42,
+    direccion: 'Molina 1137'
+  }
+
+  heroes = [
+    {
+      nombre: 'Superman',
+      vuela: true
+    },
+    {
+      nombre: 'Robin',
+      vuela: false
+    },
+    {
+      nombre: 'Aquaman',
+      vuela: false
+    }
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
