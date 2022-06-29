@@ -106,5 +106,8 @@
       }
     }
   },
-  "defaultProject": "PipeApp"
+  "defaultProject": "PipeApp",
+  "cli": {
+    "analytics": "8fbeb4af-f77e-49ea-80b5-6576cfd7c330"
+  }
 }
